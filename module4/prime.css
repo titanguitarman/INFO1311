@@ -19,7 +19,6 @@ body {
 
 header {
 	height:120px;
-	text-align: center;
 	background-image: url("primelogo.gif"); 
 	background-repeat: no-repeat;
 	background-color: #BACBE0;
@@ -29,7 +28,7 @@ header {
 h1 {
 	color:#003366;
 	font-size:3em;
-	padding-left: 10px;
+	padding-left: 110px;
 	text-shadow: 2px 2px 8px;
 }
 
@@ -41,17 +40,14 @@ nav a:visited{
 	color:#BACBE0;
 }
 
-
 nav ul {
 	list-style-type:none;
 }
-
 
 nav li{
 	display: inline;
 	padding-right: 50px;
 }
-
 
 main {
 	background-color: white;
