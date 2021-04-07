@@ -33,11 +33,11 @@ h1 {
 	text-shadow: 2px 2px 8px;
 }
 
-a:link {
+nav a:link {
 	color:white;
 }
 
-a:visited{
+nav a:visited{
 	color:#BACBE0;
 }
 
