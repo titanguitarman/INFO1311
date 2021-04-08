@@ -64,8 +64,13 @@ footer {
 	background-color: #BACBE0;
 	padding-top:20px;
 	padding-bottom:20px;
+	margin:0px;
 }
-
+footer p{
+	margin:0;
+	padding:0;
+	line-height:15px;
+}
 .company {
 	font-style: italic;
 	font-style: oblique;
