@@ -1,3 +1,11 @@
+/*
+     Khoi Nguyen
+     Assignment5
+     INFO1311 WW
+	 KUISMA
+	 04/15/2021
+*/ 
+
 * { box-sizing: border-box;}
 body { background-color: #5280C5;
       color: #003366;
@@ -80,3 +88,46 @@ footer { background-color: #AEC3E3;
 
 #mobile { display: inline; }
 #desktop { display: none; }
+
+@media only screen and (min-width: 600px){
+	header{ background-image: url(bigfish.gif); }
+	h1{ font-size: 3em;}
+	nav ul{
+		flex-direction: row;
+		flex-flow: nowrap;
+		justify-content: space-around;	
+	}
+	nav li{
+		border-bottom: none;
+	}
+	#flow {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	
+	section{
+		min-width: 30%;
+		flex: 1;
+		}
+	#mobile{ display: none; }		
+	#desktop{ display: inline;}
+		
+}
+
+@media only screen and (min-width: 1024px){
+	header{ grid-area: header; }
+	nav{ grid-area: nav; }
+	main{ grid-area: main; }
+	footer{ grid-area: footer; }
+	#wrapper {
+		display: grid;
+		grid-template: 
+			"header header"
+			"nav main"
+			"nav footer"
+			/180px ; }
+	nav ul{ flex-direction: column;
+			font-size: 1.25em;
+			font-weight: bold;
+			}
+	}
