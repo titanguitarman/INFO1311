@@ -93,6 +93,7 @@ footer { background-color: #AEC3E3;
 	header{ background-image: url(bigfish.gif); }
 	h1{ font-size: 3em;}
 	nav ul{
+		display:flex;
 		flex-direction: row;
 		flex-flow: nowrap;
 		justify-content: space-around;	
@@ -101,6 +102,7 @@ footer { background-color: #AEC3E3;
 		border-bottom: none;
 	}
 	#flow {
+		display:flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
