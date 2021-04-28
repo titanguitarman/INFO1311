@@ -1,0 +1,87 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: white;
+    color: black;
+    
+}
+
+h1 {
+	text-align: left;
+}
+
+header {
+    font-weight: bold;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    line-height: 20px;
+}
+
+#surinfo {
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+fieldset {
+    text-align: left;
+}
+
+fieldset legend {
+    background-color: white;
+}
+
+
+legend {
+    font-size: 25px;
+
+}
+div.info .cell{
+	  
+	   text-align: left;
+}
+
+div.row{
+	display: table;
+    width: 80%;
+    table-layout: fixed;
+}
+
+div.row .cell{
+	display: table-cell;
+    text-align: center;
+}
+
+ footer { 
+    margin-top: 100px;
+    text-align: center;
+}
+
+/* 
+div.row .cell {
+    display: table-cell;
+    text-align: center;
+}
+
+div.row .cell fieldset {
+    height: 220px;
+}
+        
+div.row .cell textarea {
+    height: 210px;
+}
+
+div.col {
+	
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+div .info {
+		padding-bottom: 250px;
+	padding-top: 250px;
+} */
+

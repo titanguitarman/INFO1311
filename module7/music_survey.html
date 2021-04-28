@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Music Survey</title>
+		<meta charset="utf-8">
+		<link href="music_survey.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+			<!-- Khoi Nguyen 
+			Assignment 7
+			INFO1311 WW
+			KUISMA
+			04/29/2021
+			-->
+		<header>
+			<h1>Music Survey</h1>
+		</header>
+		
+		<p id="surinfo">Please fill out this form so data can be compiled on the effectiveness of music</p>
+		
+		<form method="post" action="https://www.mccinfo.net/webresources/cgi-bin/formmail.asp">
+			<input name="recipient" type="hidden" value="knguyen18@mccneb.edu">
+			<input type="hidden" name="subject" value="Form Results">
+			<input name="bgcolor" type="hidden" value="#fefefe"> 
+			<input type="hidden" name="text_color" value="#454545">
+			<input name="title" type="hidden" value="Thank you for your input.">
+			<input name="font_face" type="hidden" value="Open Sans">
+			<input name="return_link_title" type="hidden" value="Return to Survey">
+			<input name="return_link_url" type="hidden" value="http://student.mccinfo.net/~knguyen18/module7/music_survey.html">
+			<input name="font_size" type="hidden" value="4">
+			<input name="required" type="hidden" value="realname,lastname,email">
+			
+			<div class="info">
+				<div class="cell">
+					<p>First Name:</p>
+					<input type="text" name="firstname">
+				</div>
+				<div class="cell">
+					<p>Last Name:</p>
+					<input type="text" name="lastname">
+				</div>
+				<div class="cell">
+					<p>Email:</p>
+					<input type="text" name="email">
+				</div>
+			</div>
+			
+
+			
+			<div class="col">
+				<div class="cell">
+					<fieldset>
+						<legend>Select your favorite types of music:</legend>
+						<input type="checkbox" name="type" value="Pop">Pop<br>
+						<input type="checkbox" name="type" value="Classical">Classical<br>
+						<input type="checkbox" name="type" value="Rock">Rock<br>
+						<input type="checkbox" name="type" value="Folk">Folk<br>
+						<input type="checkbox" name="type" value="Rap">Rap<br>
+						<input type="checkbox" name="type" value="Other">Other
+					</fieldset>
+				</div>
+				
+				<div class="cell">
+					<fieldset>
+						<legend>Select how often you purchase music CDs:</legend>
+						<input type="radio" name="frequency" value="Weekly">Weekly<br>
+						<input type="radio" name="frequency" value="Few">A few CDs each year<br>
+						<input type="radio" name="frequency" value="Monthly">Monthly<br>
+						<input type="radio" name="frequency" value="Never">Never purchase<br>
+						<br>
+						
+					</fieldset>
+				</div>	
+				
+				<div class="col">
+					<p>Where do you purchase these CDs?</p>
+						<select name="location">
+							<option value="" ></option>
+							<option value="Online">Online</option>
+							<option value="Retail">Retail</option>
+							<option value="Other">Other</option>
+						</select>
+				</div>
+				<div class="cell">
+					<p>What role does music play in your life?</p>
+					<textarea name="role" cols="60"></textarea>
+				</div>		 
+			</div>
+			
+			<div class="row">
+				<div class="cell">
+					<input type="submit">
+				</div>
+				<div class="cell">
+					<input type="reset">
+				</div>
+			</div>
+			
+		</form>
+		
+		<footer>
+			<a href="mailto:knguyen18@mccneb.edu">knguyen18@mccneb.edu</a>
+		</footer>
+	</body>
+</html>
