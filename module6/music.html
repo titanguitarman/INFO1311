@@ -39,7 +39,7 @@
 			}
 			
 			td {
-				text-align: center;
+				text-align: left;
 				font-size: 18px;
 			}
 			
@@ -48,7 +48,7 @@
 				color: white;	
 			}
 			
-			tr {
+			tr:first-of-type {
 				padding: 10px;
 				font-family: Verdana, Arial, sans-serif;
 				background-color: white;
@@ -56,15 +56,24 @@
 				text-align: center;
 			}
 			
+			
+			
 			#artistone:hover{
-			font-size: 0px;
-				
+			font-size: 0px;	
 			}
 			
 			#artistone:hover:after {
 				font-size: 20px;
-				content: 'Artist Name: Takanori Nishikawa';
-				
+				content: 'Artist Name: Takanori Nishikawa';	
+			}
+			
+			#arttwo:hover{
+			font-size: 0px;	
+			}
+			
+			#arttwo:hover:after {
+				font-size: 20px;
+				content: 'Artist Name: Risa Oribe 織部 里沙';
 			}
 
 			
@@ -72,7 +81,12 @@
 		</style>
 	</head>
 	<body>
-
+		<!-- Khoi Nguyen 
+			Assignment 6
+			INFO1311 WW
+			KUISMA
+			04/22/2021
+			-->
 		<header>
 			<h1>INFO1311 Assignment 6</h1>
 		</header>
@@ -107,7 +121,7 @@
 				<td><a href="https://en.wikipedia.org/wiki/Takanori_Nishikawa_discography#As_T.M.Revolution">Wikipedia</a></td>
 			</tr>
 			<tr>
-				<td>LISA - LEO-NINE</td>
+				<td id="arttwo">LISA - LEO-NINE</td>
 				<td>
 					<ol>
 						<li>Play the World!</li>
