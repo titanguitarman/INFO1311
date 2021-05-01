@@ -28,15 +28,15 @@
 			<input name="return_link_title" type="hidden" value="Return to Survey">
 			<input name="return_link_url" type="hidden" value="http://student.mccinfo.net/~knguyen18/module7/music_survey.html">
 			<input name="font_size" type="hidden" value="4">
-			<input name="required" type="hidden" value="realname,lastname,email">
+			<input name="required" type="hidden" value="firstname,lastname,email">
 			
 			<div class="info">
-					<label for="fname">First Name:</label>
-						<input type="text" id="fname" name="fname" size="25"><br />
-					<label for="lname">Last Name:</label>
-						<input type="text" id="lname" name="lname" size="25"><br />
-					<label for="email">Email:</label>
-						<input type="text" id="email" name="email" size="25"><br />
+					<label for="firstname">First Name:</label><br>
+						<input type="text" id="firstname" name="firstname" size="25"><br>
+					<label for="lastname">Last Name:</label><br>
+						<input type="text" id="lastname" name="lastname" size="25"><br>
+					<label for="email">Email:</label><br>
+						<input type="text" id="email" name="email" size="25"><br>
 			</div>
 			
 
@@ -69,7 +69,7 @@
 				<div class="pur">
 					<p>Select the method you use most often to purchase Music:</p>
 						<select name="location">
-							<option></option>
+							<option label=" "></option>
 							<option value="Online">Online</option>
 							<option value="Retail">Retail</option>
 							<option value="Other">Other</option>

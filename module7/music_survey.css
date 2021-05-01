@@ -46,13 +46,19 @@ legend {
 
 }
 div.info {
-	   width:100;
-	   line-height:2.0;
+	   width:100px;
+	   line-height:normal;
 	   text-align: left;	 
 }
 
 div.col {
 	padding-top:50px;
+	padding-bottom:15px;
+	line-height:normal;
+}
+
+div.col .cell{
+	
 	padding-bottom:15px;
 	line-height:normal;
 }
@@ -68,7 +74,7 @@ div.col .role{
 }
 
  footer { 
-    margin-top: 100px;
+    margin-top: 25px;
     text-align: center;
 }
 
