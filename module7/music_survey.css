@@ -1,9 +1,16 @@
+/*
+     Khoi Nguyen
+     Assignment7
+     INFO1311 WW
+	 KUISMA
+	 04/29/2021
+*/ 
+
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: Verdana, Arial, sans-serif;
     background-color: white;
     color: black;
-    
-}
+    }
 
 h1 {
 	text-align: left;
@@ -20,7 +27,7 @@ header {
 
 #surinfo {
     width: 100%;
-    text-align: center;
+    text-align: left;
     font-style: italic;
     font-size: 15px;
     margin-bottom: 15px;
@@ -34,29 +41,30 @@ fieldset legend {
     background-color: white;
 }
 
-
 legend {
     font-size: 25px;
 
 }
-div.info .cell{
-	  
-	   text-align: left;
+div.info {
+	   width:100;
+	   line-height:2.0;
+	   text-align: left;	 
 }
 
 div.col {
 	padding-top:50px;
-	padding-bottom:15;
-}
-div.row{
-	display: table;
-    width: 80%;
-    table-layout: fixed;
+	padding-bottom:15px;
+	line-height:normal;
 }
 
-div.row .cell{
-	display: table-cell;
-    text-align: center;
+div.col .pur{
+	padding-top:25px;
+	line-height:0;
+}
+
+div.col .role{
+	padding-top:25px;
+	line-height:0;
 }
 
  footer { 
@@ -64,28 +72,5 @@ div.row .cell{
     text-align: center;
 }
 
-/* 
-div.row .cell {
-    display: table-cell;
-    text-align: center;
-}
 
-div.row .cell fieldset {
-    height: 220px;
-}
-        
-div.row .cell textarea {
-    height: 210px;
-}
-
-div.col {
-	
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
-
-div .info {
-		padding-bottom: 250px;
-	padding-top: 250px;
-} */
 

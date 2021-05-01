@@ -23,7 +23,7 @@
 			<input type="hidden" name="subject" value="Form Results">
 			<input name="bgcolor" type="hidden" value="#fefefe"> 
 			<input type="hidden" name="text_color" value="#454545">
-			<input name="title" type="hidden" value="Thank you for your input.">
+			<input name="title" type="hidden" value="Thank you for your input!">
 			<input name="font_face" type="hidden" value="Open Sans">
 			<input name="return_link_title" type="hidden" value="Return to Survey">
 			<input name="return_link_url" type="hidden" value="http://student.mccinfo.net/~knguyen18/module7/music_survey.html">
@@ -31,18 +31,12 @@
 			<input name="required" type="hidden" value="realname,lastname,email">
 			
 			<div class="info">
-				<div class="cell">
-					<p>First Name:</p>
-					<input type="text" name="firstname">
-				</div>
-				<div class="cell">
-					<p>Last Name:</p>
-					<input type="text" name="lastname">
-				</div>
-				<div class="cell">
-					<p>Email:</p>
-					<input type="text" name="email">
-				</div>
+					<label for="fname">First Name:</label>
+						<input type="text" id="fname" name="fname" size="25"><br />
+					<label for="lname">Last Name:</label>
+						<input type="text" id="lname" name="lname" size="25"><br />
+					<label for="email">Email:</label>
+						<input type="text" id="email" name="email" size="25"><br />
 			</div>
 			
 
@@ -72,30 +66,28 @@
 					</fieldset>
 				</div>	
 				
-				<div class="col">
-					<p>Where do you purchase these CDs?</p>
+				<div class="pur">
+					<p>Select the method you use most often to purchase Music:</p>
 						<select name="location">
-							<option value="" ></option>
+							<option></option>
 							<option value="Online">Online</option>
 							<option value="Retail">Retail</option>
 							<option value="Other">Other</option>
 						</select>
 				</div>
-				<div class="cell">
+				
+				<div class="role">
 					<p>What role does music play in your life?</p>
 					<textarea name="role" cols="60"></textarea>
 				</div>		 
 			</div>
 			
-			<div class="row">
-				<div class="cell">
-					<input type="submit">
-				</div>
-				<div class="cell">
-					<input type="reset">
-				</div>
-			</div>
 			
+			<div class="button">
+				<input type="Submit" class="button" value="Submit">
+				<input type="reset" class="button" value="Reset">
+			
+			</div>		
 		</form>
 		
 		<footer>
