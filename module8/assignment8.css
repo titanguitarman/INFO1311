@@ -69,7 +69,6 @@ header {
 	text-shadow: 2px 2px 4px;
 }
 
-
 nav { 
 	text-align: center;
 }
@@ -77,6 +76,7 @@ nav {
 nav li:hover{
 	background-color: #ddd;
 	color: black;
+	text-align:center;
 }
 
 nav ul {
@@ -104,11 +104,12 @@ div.activ {
 
 
 .heading2 {
-text-align: center;
-width: 100%;
-height: auto;
-padding: 20px;
+	text-align: center;
+	width: 100%;
+	height: auto;
+	padding: 20px;
 }
+
  footer { 
 	border-top: 1px solid black;
     margin-top: 25px;
@@ -116,12 +117,19 @@ padding: 20px;
 	padding-right:10px;
 }
 
-.Gallery img {
-margin: auto;
+#contact:after {
+        content: 'Khoi Nguyen';
+}
+#contact:hover:after {
+        content: 'Contact グエン';
 }
 
-.videos { display : flex;
+.Gallery img {
+	margin: auto;
+}
 
-margin: auto;
-
+.videos {
+	padding-left:25px;
+	width:100%;
+	height:auto;
 }
