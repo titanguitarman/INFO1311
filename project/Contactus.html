@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Contact Us | The Bistro Cafe</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="Final.css" rel="stylesheet">
+</head>
+<body>
+			<!-- Khoi Nguyen 
+			Final Project
+			INFO1311 WW
+			KUISMA
+			05/16/2021
+			-->
+
+
+	<div id="wrapper">
+		<header>
+			<h1><a href="Home.html">The Bistro Cafe</a></h1>
+		</header>
+			  <nav>
+				<ul>
+				  <li><a href="Home.html">Home</a></li>
+				  <li><a href="History.html">History</a></li> 
+				  <li><a href="Specials.html">Specials</a></li>
+				  <li><a href="Contactus.html">Contact Us</a></li>
+				</ul>
+			  </nav>
+			  
+		<main>
+			<form method="post" action="https://www.mccinfo.net/webresources/cgi-bin/formmail.asp">
+			<input name="recipient" type="hidden" value="knguyen18@mccneb.edu">
+			<input type="hidden" name="subject" value="INFO1311 Final Project Khoi Nguyen">
+			<input name="bgcolor" type="hidden" value="#fefefe"> 
+			<input name="redirect" type="hidden" value="http://student.mccinfo.net/~knguyen18/project/response.html">
+			<input name="font_face" type="hidden" value="Open Sans">
+			<input name="font_size" type="hidden" value="4">
+			<input name="required" type="hidden" value="firstname,lastname,email">
+			
+			<div class="info">
+					<label for="firstname">First Name:</label><br>
+						<input type="text" id="firstname" name="firstname" size="25"><br>
+					<label for="lastname">Last Name:</label><br>
+						<input type="text" id="lastname" name="lastname" size="25"><br>
+					<label for="email">Email:</label><br>
+						<input type="text" id="email" name="email" size="25"><br>
+					<label for="phone">Phone Number:</label><br>
+						<input type="text" id="phone" name="phone" size="25"><br>	
+			</div>
+			
+			<div class="type">
+				<legend>How should we reach you?</legend>
+				<select name="Contact Type">
+                        <option value="" label="Select One"></option>
+                        <option value="Phone">Phone</option>
+                        <option value="Email">Email</option>
+                </select>
+			</div>	
+			
+			<div class="role">
+					<p>Comments or Questions?</p>
+					<textarea name="Comments or Questions" cols="60"></textarea>
+			</div>	
+			
+			
+			<div class="button">
+				<style>
+					text-align: left;
+					line-height: 0;
+				</style>
+				<input onclick="redirect.html" type="submit" value="Submit" />
+				<input type="reset" class="button" value="Reset">
+			
+			</div>		
+			</form>
+			
+		
+		</main>
+
+
+
+
+		<footer>
+				<a href="Home.html">Home</a>
+				<a href="History.html">History</a>
+				<a href="Specials.html">Specials</a>
+				<a href="Contactus.html">Contact Us</a><br>
+				Copyright &copy; 2021 <a id="contact" href="mailto:knguyen18@mccneb.edu"></a> 
+		</footer>
+		</div>
+	</body>
+</html>
