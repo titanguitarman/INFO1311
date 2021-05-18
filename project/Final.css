@@ -6,20 +6,20 @@ KUISMA
 -->
 
 * { box-sizing: border-box;}
-body { background-color: #5280C5;
+body { background-color: #353535;
       color: #003366;
 	  font-family: Verdana, Arial, sans-serif;
 	  margin: 0;
 }
 #wrapper { 
 	background-color: #F0F0F0;
+	width: 100%;
 }
 header {
-	background-color: #000066;
-    background-image: url(lilfish.gif);
-	background-position: center;
-	background-repeat: no-repeat;
-	color: #F0F0F0;
+    background: rgb(2,0,36);
+	background: url('logo1.png')no-repeat ,radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(2,187,173,1) 62%, rgba(3,27,32,1) 100%);  
+	
+
 	font-family: Georgia, "Times New Roman", serif;
 	padding: 1em;
 	text-align: center;
@@ -97,10 +97,8 @@ div.role{
 	line-height:0;
 }
 
-
-
 footer { 
-         background-color: #AEC3E3;
+         background-color: #F6F6F6;
          font-size: .70em;
          font-style: italic;
 		 padding: 1em;
@@ -112,9 +110,11 @@ footer {
 
 #contact:after {
         content: 'Khoi Nguyen';
+		color: #3262A3;
 }
 #contact:hover:after {
         content: 'Contact グエン';
+		color: #3262A3;
 }
 
 
@@ -122,7 +122,15 @@ footer {
 #desktop { display: none; }
 
 @media only screen and (min-width: 800px){
-	header{ background-image: url(bigfish.gif); }
+	#wrapper{
+		margin: 0 auto;
+		width:80%;
+		align:center;
+	}
+	header{   
+		background: rgb(2,0,36);
+		background:url('logo2.png')no-repeat, radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(2,187,173,1) 62%, rgba(3,27,32,1) 100%); 
+			 }
 	h1{ font-size: 3em;}
 	nav ul{
 		display:flex;
@@ -139,33 +147,12 @@ footer {
 		flex-wrap: wrap;
 	}
 	
-	section{
-		min-width: 30%;
-		flex: 1;
-		}
 	#mobile{ display: none; }		
 	#desktop{ display: inline;}
 		
 }
 
-@media only screen and (min-width: 1024px){
-	header{ grid-area: header; }
-	nav{ grid-area: nav; }
-	main{ grid-area: main; }
-	footer{ grid-area: footer; }
-	#wrapper {
-		display: grid;
-		grid-template: 
-			"header header"
-			"nav nav"
-			"main main"
-			"footer footer"
-			/180px ; }
-	nav ul{ flex-direction: left;
-			font-size: 1.25em;
-			font-weight: bold;
-			}
-	}
+
 	
 	
 
