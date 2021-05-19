@@ -1,15 +1,16 @@
-<!-- Khoi Nguyen 
+/* Khoi Nguyen 
 Final Project
 INFO1311 WW
 KUISMA
 05/16/2021
--->
+*/
 
 * { box-sizing: border-box;}
 body { background-color: #353535;
       color: #003366;
 	  font-family: Verdana, Arial, sans-serif;
 	  margin: 0;
+	  text-align:left;
 }
 #wrapper { 
 	background-color: #F0F0F0;
@@ -67,6 +68,7 @@ main {
 	  overflow: auto;
       padding-left: 2em;
       padding-right: 2em;
+	  text-align: left;
 }
 
 div.info {
@@ -97,6 +99,33 @@ div.role{
 	line-height:0;
 }
 
+.container {
+  position: relative;
+  width: 50%;
+}
+.photo{
+	display:block;
+	max-width: 100%;
+	height: auto;
+	
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
 footer { 
          background-color: #F6F6F6;
          font-size: .70em;
@@ -117,15 +146,23 @@ footer {
 		color: #3262A3;
 }
 
+#f1 {display:inline;}
+#f2 {display:none}
+
 
 #mobile { display: inline; }
 #desktop { display: none; }
 
 @media only screen and (min-width: 800px){
+	
+	
+	#f1 {display: none;}
+    #f2 {display: inline;}
+	
 	#wrapper{
 		margin: 0 auto;
 		width:80%;
-		align:center;
+		text-align:center;
 	}
 	header{   
 		background: rgb(2,0,36);

@@ -40,6 +40,7 @@
 			<input name="required" type="hidden" value="firstname,lastname,email">
 			
 			<div class="info">
+				
 					<label for="firstname">First Name:</label><br>
 						<input type="text" id="firstname" name="firstname" size="25"><br>
 					<label for="lastname">Last Name:</label><br>
@@ -47,16 +48,19 @@
 					<label for="email">Email:</label><br>
 						<input type="text" id="email" name="email" size="25"><br>
 					<label for="phone">Phone Number:</label><br>
-						<input type="text" id="phone" name="phone" size="25"><br>	
+						<input type="text" id="phone" name="phone" size="25"><br><br>	
+				
 			</div>
 			
 			<div class="type">
-				<legend>How should we reach you?</legend>
-				<select name="Contact Type">
+				<fieldset>
+					<legend>How should we reach you?</legend>
+					<select name="Contact Type">
                         <option value="" label="Select One"></option>
                         <option value="Phone">Phone</option>
                         <option value="Email">Email</option>
-                </select>
+					</select>
+				</fieldset>
 			</div>	
 			
 			<div class="role">
@@ -65,11 +69,7 @@
 			</div>	
 			
 			
-			<div class="button">
-				<style>
-					text-align: left;
-					line-height: 0;
-				</style>
+			<div class="button" style="text-align:left;line-height:0;" >
 				<input onclick="redirect.html" type="submit" value="Submit" />
 				<input type="reset" class="button" value="Reset">
 			
